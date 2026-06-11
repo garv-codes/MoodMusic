@@ -7,4 +7,4 @@ plotly
 scipy
 spotipy
 gradio
-huggingface_hub
+huggingface_hub<0.27.0
