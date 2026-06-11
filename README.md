@@ -7,6 +7,12 @@ sdk: gradio
 sdk_version: 5.8.0
 app_file: app.py
 pinned: false
+tags:
+  - machine-learning
+  - recommendation-system
+  - spotify
+  - python
+  - gradio
 ---
 
 <div align="center">
@@ -139,7 +145,6 @@ MoodMusic uses an end-to-end unsupervised machine learning pipeline:
 
 ## 🗺️ Roadmap
 
-- [x] 🌐 **Streamlit/Gradio Web Interface** — Build an interactive, Python-native web application to easily demo the model.
 - [ ] 🎭 **Mood-Based Playlists** — Generate robust playlists based on real-time user mood selection.
 - [ ] 🔄 **Real-Time Spotify Integration** — Connect to live Spotify API for real-time inference and personalized recommendations.
 - [ ] 🤖 **Advanced Modeling** — Experiment with Neural Collaborative Filtering and Autoencoders for improved vector representations.
