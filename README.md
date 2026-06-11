@@ -6,8 +6,11 @@
 
 [![Python](https://img.shields.io/badge/Python-3.8+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
 [![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-F37626?style=for-the-badge&logo=jupyter&logoColor=white)](https://jupyter.org)
+[![Gradio](https://img.shields.io/badge/Gradio-App-FF7C00?style=for-the-badge&logo=gradio&logoColor=white)](https://huggingface.co/spaces/Garv-codes/MoodMusic)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)](LICENSE)
 [![Spotify](https://img.shields.io/badge/Dataset-Spotify-1DB954?style=for-the-badge&logo=spotify&logoColor=white)](https://www.kaggle.com/datasets/vatsalmavani/spotify-dataset)
+
+**[🚀 Try the Live Demo on Hugging Face Spaces!](https://huggingface.co/spaces/Garv-codes/MoodMusic)**
 
 *Discover music you'll love — powered by machine learning and Spotify's audio features.*
 
@@ -97,7 +100,18 @@ The project uses the [Spotify Dataset](https://www.kaggle.com/datasets/vatsalmav
    pip install -r requirements.txt
    ```
 
-4. **Launch the notebook**
+4. **Set up Spotify API Credentials** (Required for the web app)
+   Set the following environment variables with your Spotify Developer credentials:
+   - `SPOTIPY_CLIENT_ID`
+   - `SPOTIPY_CLIENT_SECRET`
+
+5. **Run the Gradio Web App**
+   ```bash
+   python app.py
+   ```
+   *(The app will be available locally at http://127.0.0.1:7860)*
+
+6. **Or Launch the Jupyter Notebook**
    ```bash
    jupyter notebook Music_Recommendation_System.ipynb
    ```
@@ -114,7 +128,7 @@ MoodMusic uses an end-to-end unsupervised machine learning pipeline:
 
 ## 🗺️ Roadmap
 
-- [ ] 🌐 **Streamlit/Gradio Web Interface** — Build an interactive, Python-native web application to easily demo the model.
+- [x] 🌐 **Streamlit/Gradio Web Interface** — Build an interactive, Python-native web application to easily demo the model.
 - [ ] 🎭 **Mood-Based Playlists** — Generate robust playlists based on real-time user mood selection.
 - [ ] 🔄 **Real-Time Spotify Integration** — Connect to live Spotify API for real-time inference and personalized recommendations.
 - [ ] 🤖 **Advanced Modeling** — Experiment with Neural Collaborative Filtering and Autoencoders for improved vector representations.
